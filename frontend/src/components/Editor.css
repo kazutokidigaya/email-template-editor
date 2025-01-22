@@ -1,0 +1,52 @@
+/* GrapesEditor.css */
+#gjs {
+  background-color: #f4f4f4;
+  overflow: auto; /* Ensure scrollability on smaller screens */
+}
+
+.gjs-block {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gjs-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gjs-toolbar {
+  background-color: #333 !important;
+  color: white !important;
+  border-radius: 5px;
+}
+
+.gjs-cv-canvas {
+  border: 1px dashed #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* Responsive Editor - Small Screens */
+@media (max-width: 768px) {
+  #gjs {
+    height: auto; /* Allow flexible height */
+    padding: 10px; /* Add some padding */
+  }
+
+  .gjs-block {
+    margin-bottom: 10px;
+    width: 100%; /* Ensure blocks are full-width */
+  }
+
+  .gjs-toolbar {
+    font-size: 14px; /* Adjust toolbar size */
+  }
+
+  .gjs-cv-canvas {
+    margin: 0 auto; /* Center canvas */
+    width: 100%; /* Ensure the canvas scales */
+  }
+}
